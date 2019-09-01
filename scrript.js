@@ -27,5 +27,25 @@ function led(myName, myColor, myPrice, myModelno) {
     }
     return tv;
 }
-let screen = watch("samsung", "black", 1500000, 333);
+let screen = led("samsung", "black", 1500000, 333);
 console.log(screen);
+
+// ---------------------------
+
+function bird(myName, myColor, myPrice) {
+    let sparrow = {
+        name: myName,
+        color: myColor,
+        price: myPrice,
+
+        eat: function (meal) {
+            console.log(meal);
+        },
+        greet: function () {
+            console.log(`hello,my name is ${this.name} and my color is${this.color}`);
+        },
+    }
+    return sparrow;
+}
+let abc = bird("rio", "blue", 15000, 333);
+console.log(abc);
